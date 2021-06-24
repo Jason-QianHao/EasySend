@@ -1,0 +1,14 @@
+<!--pages/intro/intro.wxml-->
+<view class="title">EasySend Project</view>
+<view class="t">帮你把文字和列表发送到pc端</view>
+<view class="t">pc端使用下面网址打开列表</view>
+<view class="copy">
+  <view class="li">文字</view>
+  <view class="url">http://3a40r96515.zicp.vip/EasySend/getCopyList</view>
+  <button class="bun" type="primary" bindtap="bunCopy">一键复制（可以去文字板块粘贴发送到浏览器</button>
+</view>
+<view class="copy">
+  <view class="li">文件</view>
+  <view class="url">http://3a40r96515.zicp.vip/EasySend/getFileList</view>
+  <button class="bun" type="primary" bindtap="bunFile">一键复制（可以去文字板块粘贴发送到浏览器</button>
+</view>

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search">
+    <input class="input" placeholder="复制需要传输的文字到本框" bindinput="bindKeyInput"/>
+    <button bindtap="enter">Enter</button>
+  </view>
+  <view class="result">{{result}}</view>
+</view>

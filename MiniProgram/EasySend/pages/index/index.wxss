@@ -1,0 +1,22 @@
+.search{
+  flex-direction: column;
+  padding: 5px;
+  font-size: 14px;
+  background-color: #ccc;
+  
+}
+.input{
+  width:100%;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 10px #ccc;
+  color: #000;
+  background-color:#fff;
+  border-radius: 5px;
+}
+.result{
+  color: #ccc;
+  font-size: large;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/intro/intro",
+    "pages/index/index",
+    "pages/file/file"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "EasySend",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "position": "top",
+    "color": "#ccc",
+    "list": [
+      {
+        "pagePath": "pages/intro/intro",
+        "text": "关于"
+      },
+      {
+      "pagePath": "pages/index/index",
+      "text": "文字"
+      },
+      {
+        "pagePath": "pages/file/file",
+        "text": "文件"
+      }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

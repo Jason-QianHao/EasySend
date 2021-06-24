@@ -1,0 +1,25 @@
+/* pages/intro/intro.wxss */
+.url{
+  color: rgb(240, 106, 106);
+  font-size: small;
+  text-align: center;
+}
+.title{
+  color: rgb(12, 12, 12);
+  font-size: x-large;
+  text-align: center;
+}
+.t{
+  color: rgb(12, 12, 12);
+  font-size: large;
+}
+.copy{
+  padding: 5px;
+}
+.li{
+  color: rgb(33, 62, 126);
+  font-size: large;
+}
+.bun{
+  font-size: smaller;
+}

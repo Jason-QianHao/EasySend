@@ -1,0 +1,37 @@
+server:
+   port: 80
+   context-path: /EasySend
+spring:
+#redis
+   redis:
+      host: localhost
+      password: 123456
+      port: 6379
+      pool:
+         max-idle: 100
+         min-idle: 1
+         max-active: 1000
+         max-wait: -1
+# mysql
+   datasource:
+      url: jdbc:mysql://localhost:3306/easysend
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+   freemarker:
+      allow-request-override: false
+      cache: true
+      check-template-location: true
+      charset: UTF-8
+      content-type: text/html
+      expose-request-attributes: false
+      expose-session-attributes: false
+      expose-spring-macro-helpers: false
+      suffix: .ftl
+      template-loader-path: classpath:/templates/
+#配置上传文件大小 spring.http.multipart.maxFileSize = 10Mb  spring.http.multipart.maxRequestSize=100Mb
+   http:
+      multipart:
+         maxFileSize: 100MB
+         maxRequestSize: 200MB
+fileBasePath: D:\\eclipse\\workSpace\\EasySend\\src\\main\\resources\\static\\files\\
