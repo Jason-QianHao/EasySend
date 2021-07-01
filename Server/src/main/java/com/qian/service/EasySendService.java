@@ -26,6 +26,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.qian.entity.FileEntity;
 import com.qian.mapper.FileMapping;
 import com.qian.utils.Constants;
+import com.qian.utils.TimeUtils;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -41,7 +42,7 @@ public class EasySendService {
 	private FileMapping fileMapping;
 	private volatile int updateId = 0;
 	private boolean isLarge = false;
-
+	
 	/*
 	 * 参数：redis的key 功能：新添一个msg
 	 */
@@ -52,7 +53,8 @@ public class EasySendService {
 		while (list.size() > 10) {
 			redisService.removeKey(Constants.MSG, (String) list.pollFirst());
 		}
-		list.offerLast(msg);
+		String value = TimeUtils.getCurrentTime() + "    " + msg;
+		list.offerLast(value);
 		redisService.redisSetList(Constants.MSG, list);
 	}
 
